@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<style>
+    .fieldset {
+        border: 2px solid #a1a1a1;
+        padding: 10px 40px;
+        background: #dddddd;
+        width: 300px;
+        border-radius: 25px;
+    }
+</style>
+
+<fieldset class="fieldset">
+    <legend>Time(PartialView)</legend>
+    <p id="clockPlaceHolder">clock</p>
+</fieldset>
+
+
+<script src="~/js/_DateTimePartial.js"></script>
+<script>
+
+        var clockPlaceHolder = document.getElementById('clockPlaceHolder');
+        startClock(clockPlaceHolder);
+
+</script>
+
